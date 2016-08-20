@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "start": "node ./bin/www",
-    "dev": "DEBUG=unbecoming-cards:* nodemon --debug ./bin/www"
+    "dev": "DEBUG=unbecoming-cards:* nodemon --debug-brk ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.15.1",
