@@ -5,7 +5,7 @@
   </packageImport>
   <packagedElement xmi:type="uml:Actor" xmi:id="_eWR1MJLtEeaGGsN_HzNPyw" name="UserUbc"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_FEmgIJLuEeaGGsN_HzNPyw" name="put from BC todo to Trello Card"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_Zg1MYJLxEeaGGsN_HzNPyw" name="Retrieve all new todos from BC to Trello Cards">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Zg1MYJLxEeaGGsN_HzNPyw" name="Copy all new todos from BC todoset to Trello Cards">
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_uXlt8JLzEeaGGsN_HzNPyw" name="ExtensionPoint1"/>
     <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_FtnZMJL0EeaGGsN_HzNPyw" name="ExtensionPoint2"/>
   </packagedElement>
@@ -17,9 +17,77 @@
     <ownedEnd xmi:type="uml:Property" xmi:id="_56FLoZLxEeaGGsN_HzNPyw" name="userubc" type="_eWR1MJLtEeaGGsN_HzNPyw" association="_56CvYJLxEeaGGsN_HzNPyw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_7ZzR8JLxEeaGGsN_HzNPyw" name="single put" client="_Zg1MYJLxEeaGGsN_HzNPyw" supplier="_FEmgIJLuEeaGGsN_HzNPyw"/>
-  <packagedElement xmi:type="uml:UseCase" xmi:id="_GZVhoJLyEeaGGsN_HzNPyw" name="Retrieve lilst of bc todos">
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GZVhoJLyEeaGGsN_HzNPyw" name="Retrieve lilst of bc todos" classifierBehavior="_t_basJL1EeabIrAVWTccGQ">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_t_basJL1EeabIrAVWTccGQ" name="retrive List of bc todos" node="_bGJyIJL2EeabIrAVWTccGQ _vxYEAJL2EeabIrAVWTccGQ _BxOUwJL3EeabIrAVWTccGQ _-qEu4JL8EeabIrAVWTccGQ _RQtS0JL9EeabIrAVWTccGQ _byDxsJL9EeabIrAVWTccGQ _ffU4MJL-EeabIrAVWTccGQ _Wz61AJMDEeabIrAVWTccGQ" group="_ffU4MJL-EeabIrAVWTccGQ">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_um7l8JL9EeabIrAVWTccGQ" name="check todo is new" node="_2lhNIJL9EeabIrAVWTccGQ _5N_rQJL9EeabIrAVWTccGQ _idD30JMCEeabIrAVWTccGQ _n9bJEJMCEeabIrAVWTccGQ _xKv0QJMCEeabIrAVWTccGQ _6JxkwJMCEeabIrAVWTccGQ _LuGXIJMDEeabIrAVWTccGQ">
+        <edge xmi:type="uml:ControlFlow" xmi:id="_tw91AJMCEeabIrAVWTccGQ" target="_idD30JMCEeabIrAVWTccGQ" source="_5N_rQJL9EeabIrAVWTccGQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_uZU1gJMCEeabIrAVWTccGQ" target="_n9bJEJMCEeabIrAVWTccGQ" source="_idD30JMCEeabIrAVWTccGQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Aa5kkJMDEeabIrAVWTccGQ" name="found" target="_6JxkwJMCEeabIrAVWTccGQ" source="_n9bJEJMCEeabIrAVWTccGQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_Hk8JYJMDEeabIrAVWTccGQ" name="not found" target="_xKv0QJMCEeabIrAVWTccGQ" source="_n9bJEJMCEeabIrAVWTccGQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_QeSvsJMDEeabIrAVWTccGQ" target="_LuGXIJMDEeabIrAVWTccGQ" source="_6JxkwJMCEeabIrAVWTccGQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_RfpfAJMDEeabIrAVWTccGQ" target="_LuGXIJMDEeabIrAVWTccGQ" source="_xKv0QJMCEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:ActivityParameterNode" xmi:id="_2lhNIJL9EeabIrAVWTccGQ" name="todo" incoming="_tbVqoJL_EeabIrAVWTccGQ">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="_2libQJL9EeabIrAVWTccGQ" value="1"/>
+        </node>
+        <node xmi:type="uml:InitialNode" xmi:id="_5N_rQJL9EeabIrAVWTccGQ" name="verifica todoList" outgoing="_tw91AJMCEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_idD30JMCEeabIrAVWTccGQ" name="retrive from db todo" incoming="_tw91AJMCEeabIrAVWTccGQ" outgoing="_uZU1gJMCEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_n9bJEJMCEeabIrAVWTccGQ" name="is found todo in database" incoming="_uZU1gJMCEeabIrAVWTccGQ" outgoing="_Aa5kkJMDEeabIrAVWTccGQ _Hk8JYJMDEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_xKv0QJMCEeabIrAVWTccGQ" name="mark todo as new todo" incoming="_Hk8JYJMDEeabIrAVWTccGQ" outgoing="_RfpfAJMDEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_6JxkwJMCEeabIrAVWTccGQ" name="mark as just loaded before" incoming="_Aa5kkJMDEeabIrAVWTccGQ" outgoing="_QeSvsJMDEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_LuGXIJMDEeabIrAVWTccGQ" name="return todo object" incoming="_QeSvsJMDEeabIrAVWTccGQ _RfpfAJMDEeabIrAVWTccGQ"/>
+      </ownedBehavior>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_L-OskJL9EeabIrAVWTccGQ" target="_-qEu4JL8EeabIrAVWTccGQ" source="_bGJyIJL2EeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZYvw8JL9EeabIrAVWTccGQ" target="_RQtS0JL9EeabIrAVWTccGQ" source="_-qEu4JL8EeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_oZRw4JL9EeabIrAVWTccGQ" target="_byDxsJL9EeabIrAVWTccGQ" source="_RQtS0JL9EeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_pWE64JL-EeabIrAVWTccGQ" target="_ffU4MJL-EeabIrAVWTccGQ" source="_byDxsJL9EeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_tbVqoJL_EeabIrAVWTccGQ" target="_2lhNIJL9EeabIrAVWTccGQ" source="_V9KI8JL_EeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_xX_tcJL_EeabIrAVWTccGQ" target="_Mp-tYJL_EeabIrAVWTccGQ" source="_ffU4MJL-EeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_tgs2UJMAEeabIrAVWTccGQ" name="new" target="_Qq36gJMAEeabIrAVWTccGQ" source="_Mp-tYJL_EeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ygMPIJMAEeabIrAVWTccGQ" name="next todo" target="_vao-AJMBEeabIrAVWTccGQ" source="_Mp-tYJL_EeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_nXPIQJMBEeabIrAVWTccGQ" target="_vao-AJMBEeabIrAVWTccGQ" source="_Qq36gJMAEeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_2p9EYJMBEeabIrAVWTccGQ" target="_V9KI8JL_EeabIrAVWTccGQ" source="_vao-AJMBEeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_gZZhgJMDEeabIrAVWTccGQ" name="end" target="_Wz61AJMDEeabIrAVWTccGQ" source="_vao-AJMBEeabIrAVWTccGQ"/>
+      <structuredNode xmi:type="uml:LoopNode" xmi:id="_ffU4MJL-EeabIrAVWTccGQ" name="verify to do" visibility="protected" incoming="_pWE64JL-EeabIrAVWTccGQ" outgoing="_xX_tcJL_EeabIrAVWTccGQ">
+        <node xmi:type="uml:DecisionNode" xmi:id="_Mp-tYJL_EeabIrAVWTccGQ" name="is todo new object" incoming="_xX_tcJL_EeabIrAVWTccGQ" outgoing="_tgs2UJMAEeabIrAVWTccGQ _ygMPIJMAEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:ValueSpecificationAction" xmi:id="_V9KI8JL_EeabIrAVWTccGQ" name="check to todo is new" incoming="_2p9EYJMBEeabIrAVWTccGQ" outgoing="_tbVqoJL_EeabIrAVWTccGQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_Qq36gJMAEeabIrAVWTccGQ" name="add todo on list of new" incoming="_tgs2UJMAEeabIrAVWTccGQ" outgoing="_nXPIQJMBEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_vao-AJMBEeabIrAVWTccGQ" name="is the last todo" incoming="_nXPIQJMBEeabIrAVWTccGQ _ygMPIJMAEeabIrAVWTccGQ" outgoing="_2p9EYJMBEeabIrAVWTccGQ _gZZhgJMDEeabIrAVWTccGQ"/>
+        <loopVariable xmi:type="uml:OutputPin" xmi:id="__xc7wJL-EeabIrAVWTccGQ" name="todoList">
+          <upperBound xmi:type="uml:LiteralInteger" xmi:id="__xibUJL-EeabIrAVWTccGQ" value="1"/>
+        </loopVariable>
+      </structuredNode>
+      <node xmi:type="uml:InitialNode" xmi:id="_bGJyIJL2EeabIrAVWTccGQ" name="verifica connessione" outgoing="_L-OskJL9EeabIrAVWTccGQ"/>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_vxYEAJL2EeabIrAVWTccGQ" name="connection">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_vxdjkJL2EeabIrAVWTccGQ" value="1"/>
+      </node>
+      <node xmi:type="uml:ActivityParameterNode" xmi:id="_BxOUwJL3EeabIrAVWTccGQ" name="todoSet">
+        <upperBound xmi:type="uml:LiteralInteger" xmi:id="_BxPi4JL3EeabIrAVWTccGQ" value="1"/>
+      </node>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_-qEu4JL8EeabIrAVWTccGQ" name="get todolist of todoSet" incoming="_L-OskJL9EeabIrAVWTccGQ" outgoing="_ZYvw8JL9EeabIrAVWTccGQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_RQtS0JL9EeabIrAVWTccGQ" name="load todos values" incoming="_ZYvw8JL9EeabIrAVWTccGQ" outgoing="_oZRw4JL9EeabIrAVWTccGQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_byDxsJL9EeabIrAVWTccGQ" name="share list of todo" incoming="_oZRw4JL9EeabIrAVWTccGQ" outgoing="_pWE64JL-EeabIrAVWTccGQ"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_Wz61AJMDEeabIrAVWTccGQ" name="return list of new todos" incoming="_gZZhgJMDEeabIrAVWTccGQ"/>
+    </ownedBehavior>
     <include xmi:type="uml:Include" xmi:id="_SvuPgJLyEeaGGsN_HzNPyw" addition="_NCwssJLyEeaGGsN_HzNPyw"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_NCwssJLyEeaGGsN_HzNPyw" name="Identify new BC todos"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_UTV-YJLyEeaGGsN_HzNPyw" name="list retrieve" client="_Zg1MYJLxEeaGGsN_HzNPyw" supplier="_GZVhoJLyEeaGGsN_HzNPyw"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_MZ1K0JL6EeabIrAVWTccGQ" name="Retrive list of todoset of a project"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_uF5c0JL6EeabIrAVWTccGQ" memberEnd="_uGDN0JL6EeabIrAVWTccGQ _uGD04JL6EeabIrAVWTccGQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_uF9HMJL6EeabIrAVWTccGQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_uF9uQJL6EeabIrAVWTccGQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uGDN0JL6EeabIrAVWTccGQ" name="retrive list of todoset of a project" type="_MZ1K0JL6EeabIrAVWTccGQ" association="_uF5c0JL6EeabIrAVWTccGQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_uGD04JL6EeabIrAVWTccGQ" name="userubc" type="_eWR1MJLtEeaGGsN_HzNPyw" association="_uF5c0JL6EeabIrAVWTccGQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_u0MGMJL6EeabIrAVWTccGQ" name="list todoset" client="_Zg1MYJLxEeaGGsN_HzNPyw" supplier="_MZ1K0JL6EeabIrAVWTccGQ"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_3-mnUJL6EeabIrAVWTccGQ" name="Retrieve all user projects"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="__sYyYJL6EeabIrAVWTccGQ" name="list user project" client="_Zg1MYJLxEeaGGsN_HzNPyw" supplier="_3-mnUJL6EeabIrAVWTccGQ"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EJLGwJL7EeabIrAVWTccGQ" memberEnd="_EJOxIpL7EeabIrAVWTccGQ _EJQmUJL7EeabIrAVWTccGQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_EJOxIJL7EeabIrAVWTccGQ" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_EJOxIZL7EeabIrAVWTccGQ" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EJOxIpL7EeabIrAVWTccGQ" name="retrieve all user projects" type="_3-mnUJL6EeabIrAVWTccGQ" association="_EJLGwJL7EeabIrAVWTccGQ"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_EJQmUJL7EeabIrAVWTccGQ" name="userubc" type="_eWR1MJLtEeaGGsN_HzNPyw" association="_EJLGwJL7EeabIrAVWTccGQ"/>
+  </packagedElement>
 </uml:Model>
