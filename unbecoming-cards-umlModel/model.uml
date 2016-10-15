@@ -18,7 +18,7 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_7ZzR8JLxEeaGGsN_HzNPyw" name="single put" client="_Zg1MYJLxEeaGGsN_HzNPyw" supplier="_FEmgIJLuEeaGGsN_HzNPyw"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_GZVhoJLyEeaGGsN_HzNPyw" name="Retrieve lilst of bc todos" classifierBehavior="_t_basJL1EeabIrAVWTccGQ">
-    <ownedBehavior xmi:type="uml:Activity" xmi:id="_t_basJL1EeabIrAVWTccGQ" name="retrive List of bc todos" node="_bGJyIJL2EeabIrAVWTccGQ _vxYEAJL2EeabIrAVWTccGQ _BxOUwJL3EeabIrAVWTccGQ _-qEu4JL8EeabIrAVWTccGQ _RQtS0JL9EeabIrAVWTccGQ _byDxsJL9EeabIrAVWTccGQ _ffU4MJL-EeabIrAVWTccGQ _Wz61AJMDEeabIrAVWTccGQ" group="_ffU4MJL-EeabIrAVWTccGQ">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_t_basJL1EeabIrAVWTccGQ" name="retrive List of bc todos" node="_bGJyIJL2EeabIrAVWTccGQ _vxYEAJL2EeabIrAVWTccGQ _BxOUwJL3EeabIrAVWTccGQ _-qEu4JL8EeabIrAVWTccGQ _RQtS0JL9EeabIrAVWTccGQ _byDxsJL9EeabIrAVWTccGQ _ffU4MJL-EeabIrAVWTccGQ _Wz61AJMDEeabIrAVWTccGQ _NLgzgJMHEeabIrAVWTccGQ _mdUO8JMHEeabIrAVWTccGQ" group="_ffU4MJL-EeabIrAVWTccGQ">
       <ownedBehavior xmi:type="uml:Activity" xmi:id="_um7l8JL9EeabIrAVWTccGQ" name="check todo is new" node="_2lhNIJL9EeabIrAVWTccGQ _5N_rQJL9EeabIrAVWTccGQ _idD30JMCEeabIrAVWTccGQ _n9bJEJMCEeabIrAVWTccGQ _xKv0QJMCEeabIrAVWTccGQ _6JxkwJMCEeabIrAVWTccGQ _LuGXIJMDEeabIrAVWTccGQ">
         <edge xmi:type="uml:ControlFlow" xmi:id="_tw91AJMCEeabIrAVWTccGQ" target="_idD30JMCEeabIrAVWTccGQ" source="_5N_rQJL9EeabIrAVWTccGQ"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_uZU1gJMCEeabIrAVWTccGQ" target="_n9bJEJMCEeabIrAVWTccGQ" source="_idD30JMCEeabIrAVWTccGQ"/>
@@ -36,7 +36,7 @@
         <node xmi:type="uml:OpaqueAction" xmi:id="_6JxkwJMCEeabIrAVWTccGQ" name="mark as just loaded before" incoming="_Aa5kkJMDEeabIrAVWTccGQ" outgoing="_QeSvsJMDEeabIrAVWTccGQ"/>
         <node xmi:type="uml:ActivityFinalNode" xmi:id="_LuGXIJMDEeabIrAVWTccGQ" name="return todo object" incoming="_QeSvsJMDEeabIrAVWTccGQ _RfpfAJMDEeabIrAVWTccGQ"/>
       </ownedBehavior>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_L-OskJL9EeabIrAVWTccGQ" target="_-qEu4JL8EeabIrAVWTccGQ" source="_bGJyIJL2EeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_L-OskJL9EeabIrAVWTccGQ" target="_NLgzgJMHEeabIrAVWTccGQ" source="_bGJyIJL2EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_ZYvw8JL9EeabIrAVWTccGQ" target="_RQtS0JL9EeabIrAVWTccGQ" source="_-qEu4JL8EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_oZRw4JL9EeabIrAVWTccGQ" target="_byDxsJL9EeabIrAVWTccGQ" source="_RQtS0JL9EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_pWE64JL-EeabIrAVWTccGQ" target="_ffU4MJL-EeabIrAVWTccGQ" source="_byDxsJL9EeabIrAVWTccGQ"/>
@@ -46,7 +46,10 @@
       <edge xmi:type="uml:ControlFlow" xmi:id="_ygMPIJMAEeabIrAVWTccGQ" name="next todo" target="_vao-AJMBEeabIrAVWTccGQ" source="_Mp-tYJL_EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_nXPIQJMBEeabIrAVWTccGQ" target="_vao-AJMBEeabIrAVWTccGQ" source="_Qq36gJMAEeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_2p9EYJMBEeabIrAVWTccGQ" name="no" target="_V9KI8JL_EeabIrAVWTccGQ" source="_vao-AJMBEeabIrAVWTccGQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_gZZhgJMDEeabIrAVWTccGQ" name="yes" target="_Wz61AJMDEeabIrAVWTccGQ" source="_vao-AJMBEeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_gZZhgJMDEeabIrAVWTccGQ" name="yes" target="_mdUO8JMHEeabIrAVWTccGQ" source="_vao-AJMBEeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_VR1IcJMJEeabIrAVWTccGQ" target="_Wz61AJMDEeabIrAVWTccGQ" source="_mdUO8JMHEeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_W2jDgJMJEeabIrAVWTccGQ" name="is connected" target="_-qEu4JL8EeabIrAVWTccGQ" source="_NLgzgJMHEeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_ZVkqsJMJEeabIrAVWTccGQ" name="not connected" target="_Wz61AJMDEeabIrAVWTccGQ" source="_NLgzgJMHEeabIrAVWTccGQ"/>
       <structuredNode xmi:type="uml:LoopNode" xmi:id="_ffU4MJL-EeabIrAVWTccGQ" name="verify to do" visibility="protected" incoming="_pWE64JL-EeabIrAVWTccGQ" outgoing="_xX_tcJL_EeabIrAVWTccGQ">
         <node xmi:type="uml:DecisionNode" xmi:id="_Mp-tYJL_EeabIrAVWTccGQ" name="is todo new object" incoming="_xX_tcJL_EeabIrAVWTccGQ" outgoing="_tgs2UJMAEeabIrAVWTccGQ _ygMPIJMAEeabIrAVWTccGQ"/>
         <node xmi:type="uml:ValueSpecificationAction" xmi:id="_V9KI8JL_EeabIrAVWTccGQ" name="check to todo is new" incoming="_2p9EYJMBEeabIrAVWTccGQ" outgoing="_tbVqoJL_EeabIrAVWTccGQ"/>
@@ -56,17 +59,19 @@
           <upperBound xmi:type="uml:LiteralInteger" xmi:id="__xibUJL-EeabIrAVWTccGQ" value="1"/>
         </loopVariable>
       </structuredNode>
-      <node xmi:type="uml:InitialNode" xmi:id="_bGJyIJL2EeabIrAVWTccGQ" name="verifica connessione" outgoing="_L-OskJL9EeabIrAVWTccGQ"/>
+      <node xmi:type="uml:InitialNode" xmi:id="_bGJyIJL2EeabIrAVWTccGQ" name="connection check" outgoing="_L-OskJL9EeabIrAVWTccGQ"/>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_vxYEAJL2EeabIrAVWTccGQ" name="connection">
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_vxdjkJL2EeabIrAVWTccGQ" value="1"/>
       </node>
       <node xmi:type="uml:ActivityParameterNode" xmi:id="_BxOUwJL3EeabIrAVWTccGQ" name="todoSet">
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_BxPi4JL3EeabIrAVWTccGQ" value="1"/>
       </node>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_-qEu4JL8EeabIrAVWTccGQ" name="get todolist of todoSet" incoming="_L-OskJL9EeabIrAVWTccGQ" outgoing="_ZYvw8JL9EeabIrAVWTccGQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_-qEu4JL8EeabIrAVWTccGQ" name="get todolist of todoSet" incoming="_W2jDgJMJEeabIrAVWTccGQ" outgoing="_ZYvw8JL9EeabIrAVWTccGQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_RQtS0JL9EeabIrAVWTccGQ" name="load todos values" incoming="_ZYvw8JL9EeabIrAVWTccGQ" outgoing="_oZRw4JL9EeabIrAVWTccGQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_byDxsJL9EeabIrAVWTccGQ" name="share list of todo" incoming="_oZRw4JL9EeabIrAVWTccGQ" outgoing="_pWE64JL-EeabIrAVWTccGQ"/>
-      <node xmi:type="uml:ActivityFinalNode" xmi:id="_Wz61AJMDEeabIrAVWTccGQ" name="return list of new todos" incoming="_gZZhgJMDEeabIrAVWTccGQ"/>
+      <node xmi:type="uml:ActivityFinalNode" xmi:id="_Wz61AJMDEeabIrAVWTccGQ" name="end" incoming="_VR1IcJMJEeabIrAVWTccGQ _ZVkqsJMJEeabIrAVWTccGQ"/>
+      <node xmi:type="uml:DecisionNode" xmi:id="_NLgzgJMHEeabIrAVWTccGQ" name="is connection open" incoming="_L-OskJL9EeabIrAVWTccGQ" outgoing="_W2jDgJMJEeabIrAVWTccGQ _ZVkqsJMJEeabIrAVWTccGQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_mdUO8JMHEeabIrAVWTccGQ" name="return list of new todos" incoming="_gZZhgJMDEeabIrAVWTccGQ" outgoing="_VR1IcJMJEeabIrAVWTccGQ"/>
     </ownedBehavior>
     <include xmi:type="uml:Include" xmi:id="_SvuPgJLyEeaGGsN_HzNPyw" addition="_NCwssJLyEeaGGsN_HzNPyw"/>
   </packagedElement>
