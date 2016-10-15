@@ -45,8 +45,8 @@
       <edge xmi:type="uml:ControlFlow" xmi:id="_tgs2UJMAEeabIrAVWTccGQ" name="new" target="_Qq36gJMAEeabIrAVWTccGQ" source="_Mp-tYJL_EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_ygMPIJMAEeabIrAVWTccGQ" name="next todo" target="_vao-AJMBEeabIrAVWTccGQ" source="_Mp-tYJL_EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_nXPIQJMBEeabIrAVWTccGQ" target="_vao-AJMBEeabIrAVWTccGQ" source="_Qq36gJMAEeabIrAVWTccGQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_2p9EYJMBEeabIrAVWTccGQ" target="_V9KI8JL_EeabIrAVWTccGQ" source="_vao-AJMBEeabIrAVWTccGQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_gZZhgJMDEeabIrAVWTccGQ" name="end" target="_Wz61AJMDEeabIrAVWTccGQ" source="_vao-AJMBEeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_2p9EYJMBEeabIrAVWTccGQ" name="no" target="_V9KI8JL_EeabIrAVWTccGQ" source="_vao-AJMBEeabIrAVWTccGQ"/>
+      <edge xmi:type="uml:ControlFlow" xmi:id="_gZZhgJMDEeabIrAVWTccGQ" name="yes" target="_Wz61AJMDEeabIrAVWTccGQ" source="_vao-AJMBEeabIrAVWTccGQ"/>
       <structuredNode xmi:type="uml:LoopNode" xmi:id="_ffU4MJL-EeabIrAVWTccGQ" name="verify to do" visibility="protected" incoming="_pWE64JL-EeabIrAVWTccGQ" outgoing="_xX_tcJL_EeabIrAVWTccGQ">
         <node xmi:type="uml:DecisionNode" xmi:id="_Mp-tYJL_EeabIrAVWTccGQ" name="is todo new object" incoming="_xX_tcJL_EeabIrAVWTccGQ" outgoing="_tgs2UJMAEeabIrAVWTccGQ _ygMPIJMAEeabIrAVWTccGQ"/>
         <node xmi:type="uml:ValueSpecificationAction" xmi:id="_V9KI8JL_EeabIrAVWTccGQ" name="check to todo is new" incoming="_2p9EYJMBEeabIrAVWTccGQ" outgoing="_tbVqoJL_EeabIrAVWTccGQ"/>
