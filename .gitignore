@@ -1,3 +1,8 @@
+# IDE files
 .idea
+.metadata
+RemoteSystemsTempFiles
+
+# Vendors
 node_modules
 npm-debug.log
