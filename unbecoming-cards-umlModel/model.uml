@@ -18,28 +18,28 @@
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_7ZzR8JLxEeaGGsN_HzNPyw" name="single put" client="_Zg1MYJLxEeaGGsN_HzNPyw" supplier="_FEmgIJLuEeaGGsN_HzNPyw"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_GZVhoJLyEeaGGsN_HzNPyw" name="Retrieve lilst of bc todos" classifierBehavior="_t_basJL1EeabIrAVWTccGQ">
-    <ownedBehavior xmi:type="uml:Activity" xmi:id="_t_basJL1EeabIrAVWTccGQ" name="retrive List of bc todos" node="_bGJyIJL2EeabIrAVWTccGQ _vxYEAJL2EeabIrAVWTccGQ _BxOUwJL3EeabIrAVWTccGQ _-qEu4JL8EeabIrAVWTccGQ _RQtS0JL9EeabIrAVWTccGQ _byDxsJL9EeabIrAVWTccGQ _ffU4MJL-EeabIrAVWTccGQ _Wz61AJMDEeabIrAVWTccGQ _NLgzgJMHEeabIrAVWTccGQ _mdUO8JMHEeabIrAVWTccGQ" group="_ffU4MJL-EeabIrAVWTccGQ">
-      <ownedBehavior xmi:type="uml:Activity" xmi:id="_um7l8JL9EeabIrAVWTccGQ" name="check todo is new" node="_2lhNIJL9EeabIrAVWTccGQ _5N_rQJL9EeabIrAVWTccGQ _idD30JMCEeabIrAVWTccGQ _n9bJEJMCEeabIrAVWTccGQ _xKv0QJMCEeabIrAVWTccGQ _6JxkwJMCEeabIrAVWTccGQ _LuGXIJMDEeabIrAVWTccGQ">
+    <ownedBehavior xmi:type="uml:Activity" xmi:id="_t_basJL1EeabIrAVWTccGQ" name="retrive List of bc todos" node="_bGJyIJL2EeabIrAVWTccGQ _vxYEAJL2EeabIrAVWTccGQ _BxOUwJL3EeabIrAVWTccGQ _-qEu4JL8EeabIrAVWTccGQ _RQtS0JL9EeabIrAVWTccGQ _ffU4MJL-EeabIrAVWTccGQ _Wz61AJMDEeabIrAVWTccGQ _NLgzgJMHEeabIrAVWTccGQ _mdUO8JMHEeabIrAVWTccGQ" group="_ffU4MJL-EeabIrAVWTccGQ">
+      <ownedBehavior xmi:type="uml:Activity" xmi:id="_um7l8JL9EeabIrAVWTccGQ" name="check todo is new" node="_2lhNIJL9EeabIrAVWTccGQ _5N_rQJL9EeabIrAVWTccGQ _idD30JMCEeabIrAVWTccGQ _n9bJEJMCEeabIrAVWTccGQ _xKv0QJMCEeabIrAVWTccGQ _6JxkwJMCEeabIrAVWTccGQ _LuGXIJMDEeabIrAVWTccGQ _Rrvj0JMPEeabIrAVWTccGQ">
         <edge xmi:type="uml:ControlFlow" xmi:id="_tw91AJMCEeabIrAVWTccGQ" target="_idD30JMCEeabIrAVWTccGQ" source="_5N_rQJL9EeabIrAVWTccGQ"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_uZU1gJMCEeabIrAVWTccGQ" target="_n9bJEJMCEeabIrAVWTccGQ" source="_idD30JMCEeabIrAVWTccGQ"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_Aa5kkJMDEeabIrAVWTccGQ" name="found" target="_6JxkwJMCEeabIrAVWTccGQ" source="_n9bJEJMCEeabIrAVWTccGQ"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_Hk8JYJMDEeabIrAVWTccGQ" name="not found" target="_xKv0QJMCEeabIrAVWTccGQ" source="_n9bJEJMCEeabIrAVWTccGQ"/>
         <edge xmi:type="uml:ControlFlow" xmi:id="_QeSvsJMDEeabIrAVWTccGQ" target="_LuGXIJMDEeabIrAVWTccGQ" source="_6JxkwJMCEeabIrAVWTccGQ"/>
-        <edge xmi:type="uml:ControlFlow" xmi:id="_RfpfAJMDEeabIrAVWTccGQ" target="_LuGXIJMDEeabIrAVWTccGQ" source="_xKv0QJMCEeabIrAVWTccGQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_WYwskJMPEeabIrAVWTccGQ" target="_Rrvj0JMPEeabIrAVWTccGQ" source="_xKv0QJMCEeabIrAVWTccGQ"/>
+        <edge xmi:type="uml:ControlFlow" xmi:id="_XQ4nYJMPEeabIrAVWTccGQ" target="_LuGXIJMDEeabIrAVWTccGQ" source="_Rrvj0JMPEeabIrAVWTccGQ"/>
         <node xmi:type="uml:ActivityParameterNode" xmi:id="_2lhNIJL9EeabIrAVWTccGQ" name="todo" incoming="_tbVqoJL_EeabIrAVWTccGQ">
           <upperBound xmi:type="uml:LiteralInteger" xmi:id="_2libQJL9EeabIrAVWTccGQ" value="1"/>
         </node>
         <node xmi:type="uml:InitialNode" xmi:id="_5N_rQJL9EeabIrAVWTccGQ" name="verifica todoList" outgoing="_tw91AJMCEeabIrAVWTccGQ"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_idD30JMCEeabIrAVWTccGQ" name="retrive from db todo" incoming="_tw91AJMCEeabIrAVWTccGQ" outgoing="_uZU1gJMCEeabIrAVWTccGQ"/>
         <node xmi:type="uml:DecisionNode" xmi:id="_n9bJEJMCEeabIrAVWTccGQ" name="is found todo in database" incoming="_uZU1gJMCEeabIrAVWTccGQ" outgoing="_Aa5kkJMDEeabIrAVWTccGQ _Hk8JYJMDEeabIrAVWTccGQ"/>
-        <node xmi:type="uml:OpaqueAction" xmi:id="_xKv0QJMCEeabIrAVWTccGQ" name="mark todo as new todo" incoming="_Hk8JYJMDEeabIrAVWTccGQ" outgoing="_RfpfAJMDEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_xKv0QJMCEeabIrAVWTccGQ" name="mark todo as new todo" incoming="_Hk8JYJMDEeabIrAVWTccGQ" outgoing="_WYwskJMPEeabIrAVWTccGQ"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_6JxkwJMCEeabIrAVWTccGQ" name="mark as just loaded before" incoming="_Aa5kkJMDEeabIrAVWTccGQ" outgoing="_QeSvsJMDEeabIrAVWTccGQ"/>
-        <node xmi:type="uml:ActivityFinalNode" xmi:id="_LuGXIJMDEeabIrAVWTccGQ" name="return todo object" incoming="_QeSvsJMDEeabIrAVWTccGQ _RfpfAJMDEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:ActivityFinalNode" xmi:id="_LuGXIJMDEeabIrAVWTccGQ" name="return todo object" incoming="_QeSvsJMDEeabIrAVWTccGQ _XQ4nYJMPEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:OpaqueAction" xmi:id="_Rrvj0JMPEeabIrAVWTccGQ" name="insert todo into database" incoming="_WYwskJMPEeabIrAVWTccGQ" outgoing="_XQ4nYJMPEeabIrAVWTccGQ"/>
       </ownedBehavior>
       <edge xmi:type="uml:ControlFlow" xmi:id="_L-OskJL9EeabIrAVWTccGQ" target="_NLgzgJMHEeabIrAVWTccGQ" source="_bGJyIJL2EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_ZYvw8JL9EeabIrAVWTccGQ" target="_RQtS0JL9EeabIrAVWTccGQ" source="_-qEu4JL8EeabIrAVWTccGQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_oZRw4JL9EeabIrAVWTccGQ" target="_byDxsJL9EeabIrAVWTccGQ" source="_RQtS0JL9EeabIrAVWTccGQ"/>
-      <edge xmi:type="uml:ControlFlow" xmi:id="_pWE64JL-EeabIrAVWTccGQ" target="_ffU4MJL-EeabIrAVWTccGQ" source="_byDxsJL9EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_tbVqoJL_EeabIrAVWTccGQ" target="_2lhNIJL9EeabIrAVWTccGQ" source="_V9KI8JL_EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_xX_tcJL_EeabIrAVWTccGQ" target="_Mp-tYJL_EeabIrAVWTccGQ" source="_ffU4MJL-EeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_tgs2UJMAEeabIrAVWTccGQ" name="new" target="_Qq36gJMAEeabIrAVWTccGQ" source="_Mp-tYJL_EeabIrAVWTccGQ"/>
@@ -50,11 +50,12 @@
       <edge xmi:type="uml:ControlFlow" xmi:id="_VR1IcJMJEeabIrAVWTccGQ" target="_Wz61AJMDEeabIrAVWTccGQ" source="_mdUO8JMHEeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_W2jDgJMJEeabIrAVWTccGQ" name="is connected" target="_-qEu4JL8EeabIrAVWTccGQ" source="_NLgzgJMHEeabIrAVWTccGQ"/>
       <edge xmi:type="uml:ControlFlow" xmi:id="_ZVkqsJMJEeabIrAVWTccGQ" name="not connected" target="_Wz61AJMDEeabIrAVWTccGQ" source="_NLgzgJMHEeabIrAVWTccGQ"/>
-      <structuredNode xmi:type="uml:LoopNode" xmi:id="_ffU4MJL-EeabIrAVWTccGQ" name="verify to do" visibility="protected" incoming="_pWE64JL-EeabIrAVWTccGQ" outgoing="_xX_tcJL_EeabIrAVWTccGQ">
+      <edge xmi:type="uml:ControlFlow" xmi:id="_9s_9cJMOEeabIrAVWTccGQ" target="_vao-AJMBEeabIrAVWTccGQ" source="_RQtS0JL9EeabIrAVWTccGQ"/>
+      <structuredNode xmi:type="uml:LoopNode" xmi:id="_ffU4MJL-EeabIrAVWTccGQ" name="verify to do" visibility="protected" outgoing="_xX_tcJL_EeabIrAVWTccGQ">
         <node xmi:type="uml:DecisionNode" xmi:id="_Mp-tYJL_EeabIrAVWTccGQ" name="is todo new object" incoming="_xX_tcJL_EeabIrAVWTccGQ" outgoing="_tgs2UJMAEeabIrAVWTccGQ _ygMPIJMAEeabIrAVWTccGQ"/>
         <node xmi:type="uml:ValueSpecificationAction" xmi:id="_V9KI8JL_EeabIrAVWTccGQ" name="check to todo is new" incoming="_2p9EYJMBEeabIrAVWTccGQ" outgoing="_tbVqoJL_EeabIrAVWTccGQ"/>
         <node xmi:type="uml:OpaqueAction" xmi:id="_Qq36gJMAEeabIrAVWTccGQ" name="add todo on list of new" incoming="_tgs2UJMAEeabIrAVWTccGQ" outgoing="_nXPIQJMBEeabIrAVWTccGQ"/>
-        <node xmi:type="uml:DecisionNode" xmi:id="_vao-AJMBEeabIrAVWTccGQ" name="is the last todo" incoming="_nXPIQJMBEeabIrAVWTccGQ _ygMPIJMAEeabIrAVWTccGQ" outgoing="_2p9EYJMBEeabIrAVWTccGQ _gZZhgJMDEeabIrAVWTccGQ"/>
+        <node xmi:type="uml:DecisionNode" xmi:id="_vao-AJMBEeabIrAVWTccGQ" name="is the last todo" incoming="_nXPIQJMBEeabIrAVWTccGQ _ygMPIJMAEeabIrAVWTccGQ _9s_9cJMOEeabIrAVWTccGQ" outgoing="_2p9EYJMBEeabIrAVWTccGQ _gZZhgJMDEeabIrAVWTccGQ"/>
         <loopVariable xmi:type="uml:OutputPin" xmi:id="__xc7wJL-EeabIrAVWTccGQ" name="todoList">
           <upperBound xmi:type="uml:LiteralInteger" xmi:id="__xibUJL-EeabIrAVWTccGQ" value="1"/>
         </loopVariable>
@@ -67,8 +68,7 @@
         <upperBound xmi:type="uml:LiteralInteger" xmi:id="_BxPi4JL3EeabIrAVWTccGQ" value="1"/>
       </node>
       <node xmi:type="uml:OpaqueAction" xmi:id="_-qEu4JL8EeabIrAVWTccGQ" name="get todolist of todoSet" incoming="_W2jDgJMJEeabIrAVWTccGQ" outgoing="_ZYvw8JL9EeabIrAVWTccGQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_RQtS0JL9EeabIrAVWTccGQ" name="load todos values" incoming="_ZYvw8JL9EeabIrAVWTccGQ" outgoing="_oZRw4JL9EeabIrAVWTccGQ"/>
-      <node xmi:type="uml:OpaqueAction" xmi:id="_byDxsJL9EeabIrAVWTccGQ" name="share list of todo" incoming="_oZRw4JL9EeabIrAVWTccGQ" outgoing="_pWE64JL-EeabIrAVWTccGQ"/>
+      <node xmi:type="uml:OpaqueAction" xmi:id="_RQtS0JL9EeabIrAVWTccGQ" name="load todos values" incoming="_ZYvw8JL9EeabIrAVWTccGQ" outgoing="_9s_9cJMOEeabIrAVWTccGQ"/>
       <node xmi:type="uml:ActivityFinalNode" xmi:id="_Wz61AJMDEeabIrAVWTccGQ" name="end" incoming="_VR1IcJMJEeabIrAVWTccGQ _ZVkqsJMJEeabIrAVWTccGQ"/>
       <node xmi:type="uml:DecisionNode" xmi:id="_NLgzgJMHEeabIrAVWTccGQ" name="is connection open" incoming="_L-OskJL9EeabIrAVWTccGQ" outgoing="_W2jDgJMJEeabIrAVWTccGQ _ZVkqsJMJEeabIrAVWTccGQ"/>
       <node xmi:type="uml:OpaqueAction" xmi:id="_mdUO8JMHEeabIrAVWTccGQ" name="return list of new todos" incoming="_gZZhgJMDEeabIrAVWTccGQ" outgoing="_VR1IcJMJEeabIrAVWTccGQ"/>
@@ -94,5 +94,12 @@
     </eAnnotations>
     <ownedEnd xmi:type="uml:Property" xmi:id="_EJOxIpL7EeabIrAVWTccGQ" name="retrieve all user projects" type="_3-mnUJL6EeabIrAVWTccGQ" association="_EJLGwJL7EeabIrAVWTccGQ"/>
     <ownedEnd xmi:type="uml:Property" xmi:id="_EJQmUJL7EeabIrAVWTccGQ" name="userubc" type="_eWR1MJLtEeaGGsN_HzNPyw" association="_EJLGwJL7EeabIrAVWTccGQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vLKPMJMPEeabIrAVWTccGQ" name="Todo"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yUjCAJMPEeabIrAVWTccGQ" name="TodoBC">
+    <generalization xmi:type="uml:Generalization" xmi:id="_5lNMMJMPEeabIrAVWTccGQ" general="_vLKPMJMPEeabIrAVWTccGQ"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_zr-vAJMPEeabIrAVWTccGQ" name="TodoTrello">
+    <generalization xmi:type="uml:Generalization" xmi:id="_4RLYgJMPEeabIrAVWTccGQ" general="_vLKPMJMPEeabIrAVWTccGQ"/>
   </packagedElement>
 </uml:Model>
