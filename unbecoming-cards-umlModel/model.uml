@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_VLCp8JLHEeaGGsN_HzNPyw" name="RootElement">
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_VLCp8JLHEeaGGsN_HzNPyw" name="RootElement">
   <packageImport xmi:type="uml:PackageImport" xmi:id="_VVK2UJLHEeaGGsN_HzNPyw">
     <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
   </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_eWR1MJLtEeaGGsN_HzNPyw" name="UserUbc"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_FEmgIJLuEeaGGsN_HzNPyw" name="put from BC todo to Trello Card"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_Zg1MYJLxEeaGGsN_HzNPyw" name="Retrieve all new todos from BC to Trello Cards">
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_uXlt8JLzEeaGGsN_HzNPyw" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_FtnZMJL0EeaGGsN_HzNPyw" name="ExtensionPoint2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_56CvYJLxEeaGGsN_HzNPyw" memberEnd="_56FLoJLxEeaGGsN_HzNPyw _56FLoZLxEeaGGsN_HzNPyw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_56D9gJLxEeaGGsN_HzNPyw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_56EkkJLxEeaGGsN_HzNPyw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_56FLoJLxEeaGGsN_HzNPyw" name="retrieve all new todos from bc to trello cards" type="_Zg1MYJLxEeaGGsN_HzNPyw" association="_56CvYJLxEeaGGsN_HzNPyw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_56FLoZLxEeaGGsN_HzNPyw" name="userubc" type="_eWR1MJLtEeaGGsN_HzNPyw" association="_56CvYJLxEeaGGsN_HzNPyw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_7ZzR8JLxEeaGGsN_HzNPyw" name="single put" client="_Zg1MYJLxEeaGGsN_HzNPyw" supplier="_FEmgIJLuEeaGGsN_HzNPyw"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GZVhoJLyEeaGGsN_HzNPyw" name="Retrieve lilst of bc todos">
+    <include xmi:type="uml:Include" xmi:id="_SvuPgJLyEeaGGsN_HzNPyw" addition="_NCwssJLyEeaGGsN_HzNPyw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_NCwssJLyEeaGGsN_HzNPyw" name="Identify new BC todos"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_UTV-YJLyEeaGGsN_HzNPyw" name="list retrieve" client="_Zg1MYJLxEeaGGsN_HzNPyw" supplier="_GZVhoJLyEeaGGsN_HzNPyw"/>
 </uml:Model>
